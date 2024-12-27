@@ -1,14 +1,19 @@
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     margin: 0;
+    padding: 0;
 }
 
+/* Container */
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
+/* Sidebar */
 .sidebar {
     width: 250px;
     background: #e0f7fa;
@@ -63,10 +68,11 @@ body {
     height: 24px;
 }
 
+/* Main Content */
 main {
     margin-left: 260px;
     padding: 2rem;
-    padding-bottom: 5rem; /* Added padding to the bottom */
+    padding-bottom: 5rem; /* Extra bottom padding for spacing */
     flex: 1;
 }
 
@@ -74,6 +80,7 @@ main section {
     margin-bottom: 2rem;
 }
 
+/* Footer */
 footer {
     background: #0044cc;
     color: #fff;
@@ -84,6 +91,7 @@ footer {
     width: 100%;
 }
 
+/* About Section */
 .about-section {
     display: flex;
     align-items: center;
@@ -133,6 +141,7 @@ footer {
     border-radius: 5px;
 }
 
+/* Skills Section */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -154,81 +163,58 @@ footer {
     margin-top: 0.5rem;
 }
 
-/* Overall Section Styling */
+/* Education Section */
 #education {
-    background-color: #f5f5f5; /* Background color */
-    padding: 20px; /* Padding around the section */
+    background-color: #f5f5f5;
+    padding: 20px;
 }
 
-/* Heading Styling */
-#education h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Education List Styling */
 .education-list {
-    list-style-type: none; /* Remove default list markers */
-    padding: 0; /* Remove default list padding */
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Individual Education Item Styling */
 .education-list li {
-    background-color: #fff; /* Background color for each item */
-    border: 1px solid #ddd; /* Border for each item */
-    border-radius: 5px; /* Rounded corners */
-    padding: 15px; /* Padding within each item */
-    margin-bottom: 15px; /* Spacing between items */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
-/* Heading for each education item */
 .education-list li h3 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Details for each education item */
 .education-list li p {
     margin-bottom: 5px;
 }
 
-/* Resume Section Styling */
+/* Resume Section */
 #resume {
-    background-color: #ebeef0; /* Light background color */
-    padding: 20px; /* Padding around the section */
-    text-align: center; /* Center align the content */
-}
-
-#resume h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#resume p {
-    margin-bottom: 10px;
+    background-color: #ebeef0;
+    padding: 20px;
+    text-align: center;
 }
 
 .resume-view-link {
-    background-color: #333; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 15px; /* Button padding */
-    border: none; /* Remove button border */
-    border-radius: 1  5px; /* Rounded corners */
-    cursor: pointer; /* Set cursor to pointer on hover */
-    text-decoration: none; /* Remove underline from link text */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .resume-view-link:hover {
-    background-color: #222; /* Button hover effect */
+    background-color: #222;
 }
 
-/* Contact Section Styling */
+/* Contact Section */
 #contact {
-    background-color: #dddddd; /* Light background color */
-    padding: 20px; /* Padding around the section */
+    background-color: #dddddd;
+    padding: 20px;
 }
 
 #contact h2 {
@@ -242,10 +228,33 @@ footer {
 }
 
 #contact a {
-    color: #333333; /* Link text color */
-    text-decoration: none; /* Remove underline from link text */
+    color: #333;
+    text-decoration: none;
 }
 
 #contact a:hover {
-    color: #05059a; /* Link hover effect */
+    color: #05059a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .about-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
