@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: #e0f7fa;
+    padding: 1rem;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #0044cc;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background: #ddd;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    margin-left: 260px;
+    padding: 2rem;
+    padding-bottom: 5rem; /* Added padding to the bottom */
+    flex: 1;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: #0044cc;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #e0f7fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #0044cc;
+}
+
+.about-content p {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-buttons .button {
+    padding: 0.5rem 1rem;
+    background-color: #0044cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-item {
+    text-align: center;
+    flex: 1 1 100px;
+    max-width: 150px;
+}
+
+.skill-item img {
+    width: 100%;
+    height: auto;
+}
+
+.skill-item p {
+    margin-top: 0.5rem;
+}
+
+/* Overall Section Styling */
+#education {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Padding around the section */
+}
+
+/* Heading Styling */
+#education h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Education List Styling */
+.education-list {
+    list-style-type: none; /* Remove default list markers */
+    padding: 0; /* Remove default list padding */
+}
+
+/* Individual Education Item Styling */
+.education-list li {
+    background-color: #fff; /* Background color for each item */
+    border: 1px solid #ddd; /* Border for each item */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding within each item */
+    margin-bottom: 15px; /* Spacing between items */
+}
+
+/* Heading for each education item */
+.education-list li h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Details for each education item */
+.education-list li p {
+    margin-bottom: 5px;
+}
+
+/* Resume Section Styling */
+#resume {
+    background-color: #ebeef0; /* Light background color */
+    padding: 20px; /* Padding around the section */
+    text-align: center; /* Center align the content */
+}
+
+#resume h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#resume p {
+    margin-bottom: 10px;
+}
+
+.resume-view-link {
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 1  5px; /* Rounded corners */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    text-decoration: none; /* Remove underline from link text */
+}
+
+.resume-view-link:hover {
+    background-color: #222; /* Button hover effect */
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #dddddd; /* Light background color */
+    padding: 20px; /* Padding around the section */
+}
+
+#contact h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #333333; /* Link text color */
+    text-decoration: none; /* Remove underline from link text */
+}
+
+#contact a:hover {
+    color: #05059a; /* Link hover effect */
+}
